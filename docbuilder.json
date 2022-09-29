@@ -1,0 +1,10 @@
+{
+	"useDefaults": true,
+	"Outpath": "./out",
+	"Outname": "build",
+	"FolderNames": ["1","2","3"],
+	"ContentFileName": ["c.md"],
+	"ReferenceFileName": ["r.txt"],
+	"TermSections": ["External Terms", "Internal Terms"],
+	"OutputType": "md"
+}
