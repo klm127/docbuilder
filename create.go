@@ -7,7 +7,7 @@ import (
 	"path"
 )
 
-func CreateDirectories() {
+func CreateDirectoriesIfNotExisting() {
 	pwd, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
@@ -37,5 +37,4 @@ func CreateDirectories() {
 			}
 		}
 	}
-
 }

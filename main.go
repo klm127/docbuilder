@@ -12,7 +12,8 @@ var Settings = NewConfig()
 
 func main() {
 	readSettings()
-	CreateDirectories()
+	CreateDirectoriesIfNotExisting()
+	_ = ReadSections()
 }
 
 func readSettings() {
