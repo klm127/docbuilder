@@ -15,7 +15,7 @@ type Config struct {
 	FolderNames       []string
 	ContentFileName   string
 	ReferenceFileName string
-	TermSections      string
+	TermSections      []string
 	OutputType        string
 }
 

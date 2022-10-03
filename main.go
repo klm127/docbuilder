@@ -1,24 +1,37 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"os"
 	"path"
 )
 
-func main() {
+var Settings = NewConfig()
 
+func main() {
+	readSettings()
+	CreateDirectories()
+}
+
+func readSettings() {
 	pwd, err := os.Getwd()
 	if err != nil {
 		log.Fatal(err)
 	}
-	filename := path.Join(pwd, "creating.txt")
-	filePtr, err := os.Create(filename)
+	filename := path.Join(pwd, "docbuilder.json")
+	fmt.Println(filename)
+	content, err := os.ReadFile(filename)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Ensure %s exists.\n%v", filename, err)
 	}
-	filePtr.Write([]byte("hi"))
-	defer filePtr.Close()
-	fmt.Println("Hello World")
+	if err != nil {
+		log.Fatalf("Failed to read .json. %v", err)
+	}
+	err = json.Unmarshal(content, &Settings)
+	if err != nil {
+		log.Fatalf("Failed to read .json. %v", err)
+	}
+	Settings.Validate()
 }
