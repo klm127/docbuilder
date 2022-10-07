@@ -2,7 +2,7 @@
 	"useDefaults": true,
 	"Outpath": "./out",
 	"Outname": "build",
-	"FolderNames": ["1","2","3"],
+	"FolderNames": ["1"],
 	"ContentFileName": "c.md",
 	"ReferenceFileName": "r.txt",
 	"TermSections": ["External Terms", "Internal Terms"],

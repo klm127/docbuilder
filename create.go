@@ -7,6 +7,7 @@ import (
 	"path"
 )
 
+// CreateDirectoriesIfNotExisting checks the Setting for the list of directories that will be built from. If those directories do not exist, it creates them. It also creates the content file and reference file for each directory.
 func CreateDirectoriesIfNotExisting() {
 	pwd, err := os.Getwd()
 	if err != nil {

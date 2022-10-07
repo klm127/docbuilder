@@ -16,6 +16,7 @@ func main() {
 	_ = ReadSections()
 }
 
+// readSettings reads the dobuilder.json file in the process directory, looking for a docbuilder.json file. It configures docbuilder based on the settings in that file.
 func readSettings() {
 	pwd, err := os.Getwd()
 	if err != nil {
