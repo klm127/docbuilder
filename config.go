@@ -12,6 +12,7 @@ type Config struct {
 	useDefaults       bool
 	Outpath           string
 	Outname           string
+	Inpath            string
 	FolderNames       []string
 	ContentFileName   string
 	ReferenceFileName string
@@ -50,12 +51,18 @@ func (c *Config) Validate() {
 		c.Outname = "out"
 		l("Defaulting to 'out'")
 	}
+	if c.Inpath == "" {
+		l("Bad input path, empty.")
+		c.Inpath = "."
+		l("Defaulting to '.', current directory.")
+	}
+	inpath := path.Join(pwd, c.Inpath)
 	var validatedFolders []string
 	for _, s := range c.FolderNames {
-		fullPath = path.Join(pwd, s)
+		fullPath = path.Join(inpath, s)
 		valid := fs.ValidPath(fullPath)
 		if !valid {
-			l("Bad output path: ", fullPath)
+			l("Bad input path: ", fullPath)
 		}
 		validatedFolders = append(validatedFolders, s)
 	}

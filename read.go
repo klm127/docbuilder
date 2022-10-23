@@ -20,8 +20,9 @@ func ReadSections() []SectionRead {
 		log.Fatalf("Failed to get pwd in ReadSections")
 	}
 	var readresults []SectionRead
+	inpath := path.Join(pwd, Settings.Inpath)
 	for _, name := range Settings.FolderNames {
-		fpath := path.Join(pwd, name)
+		fpath := path.Join(inpath, name)
 		sec := readSection(fpath)
 		sec.Name = name
 		readresults = append(readresults, sec)

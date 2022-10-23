@@ -13,8 +13,16 @@ func CreateDirectoriesIfNotExisting() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	inpath := path.Join(pwd, Settings.Inpath)
+	_, err = os.Stat(inpath)
+	if err != nil {
+		err = os.Mkdir(inpath, 0755)
+		if err != nil {
+			fmt.Println("Failed to create " + inpath)
+		}
+	}
 	for _, folder := range Settings.FolderNames {
-		folderPath := path.Join(pwd, folder)
+		folderPath := path.Join(inpath, folder)
 		_, err := os.Stat(folderPath)
 		if err != nil {
 			err = os.Mkdir(folderPath, 0755)

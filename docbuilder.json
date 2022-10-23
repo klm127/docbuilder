@@ -2,6 +2,7 @@
 	"useDefaults": true,
 	"Outpath": "./out",
 	"Outname": "build",
+	"Inpath": "test",
 	"FolderNames": ["1"],
 	"ContentFileName": "c.md",
 	"ReferenceFileName": "r.txt",
