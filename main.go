@@ -11,9 +11,13 @@ import (
 var Settings = NewConfig()
 
 func main() {
+	SetFileLogging()
+	log.Println("~ New Docbuilder session. ~")
 	readSettings()
+	ParseFlags()
 	CreateDirectoriesIfNotExisting()
 	_ = ReadSections()
+	SaveLog()
 }
 
 // readSettings reads the dobuilder.json file in the process directory, looking for a docbuilder.json file. It configures docbuilder based on the settings in that file.

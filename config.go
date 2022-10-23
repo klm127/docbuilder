@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/fs"
 	"log"
 	"os"
@@ -9,6 +10,7 @@ import (
 
 // Config holds configuration options for docbuilder.
 type Config struct {
+	LogPath           string
 	useDefaults       bool
 	Outpath           string
 	Outname           string
@@ -39,9 +41,24 @@ func (c *Config) Validate() {
 	} else {
 		l = log.Fatal
 	}
-	fullPath := path.Join(pwd, c.Outpath)
-	valid := fs.ValidPath(fullPath)
-	if !valid {
+	if c.LogPath == "" {
+		l("Invalid logpath: " + c.LogPath)
+		l("Defaulting to current directory.")
+		c.LogPath = "."
+	}
+	_, err = os.Stat(c.LogPath)
+	if err != nil {
+		l("Logpath directory " + c.LogPath + " doesn't exist.")
+		l("Creating that directory.")
+		err = os.Mkdir(c.LogPath, os.ModeDir)
+		if err != nil {
+			fmt.Println("couldn't make log directory of " + err.Error())
+
+		}
+	}
+	outputPath := path.Join(pwd, c.Outpath)
+	isValid := fs.ValidPath(outputPath)
+	if !isValid {
 		l("Bad output path: " + c.Outpath)
 		c.Outpath = "."
 		l("Defaulting to current directory.")
@@ -56,17 +73,17 @@ func (c *Config) Validate() {
 		c.Inpath = "."
 		l("Defaulting to '.', current directory.")
 	}
-	inpath := path.Join(pwd, c.Inpath)
-	var validatedFolders []string
+	inputPath := path.Join(pwd, c.Inpath)
+	var validatedInputFolders []string
 	for _, s := range c.FolderNames {
-		fullPath = path.Join(inpath, s)
-		valid := fs.ValidPath(fullPath)
+		outputPath = path.Join(inputPath, s)
+		valid := fs.ValidPath(outputPath)
 		if !valid {
-			l("Bad input path: ", fullPath)
+			l("Bad input path: ", outputPath)
 		}
-		validatedFolders = append(validatedFolders, s)
+		validatedInputFolders = append(validatedInputFolders, s)
 	}
-	c.FolderNames = validatedFolders
+	c.FolderNames = validatedInputFolders
 	if c.ReferenceFileName == "" {
 		l("No reference file name provided.")
 		c.ReferenceFileName = "references.txt"

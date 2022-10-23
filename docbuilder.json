@@ -1,11 +1,12 @@
 {
+	"LogPath": "./out",
 	"useDefaults": true,
 	"Outpath": "./out",
 	"Outname": "build",
 	"Inpath": "test",
-	"FolderNames": ["1"],
-	"ContentFileName": "c.md",
-	"ReferenceFileName": "r.txt",
+	"FolderNames": ["1","_testdata"],
+	"ContentFileName": "r1.md",
+	"ReferenceFileName": "r1.txt",
 	"TermSections": ["External Terms", "Internal Terms"],
 	"OutputType": "md"
 }
