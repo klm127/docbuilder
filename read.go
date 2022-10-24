@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 	"path"
@@ -40,7 +39,7 @@ func readSection(folderpath string) SectionRead {
 		parsed := string(bytes)
 		readResult.Content = parsed
 	} else {
-		fmt.Println("Error reading " + contentPath)
+		log.Println("Error reading " + contentPath)
 		readResult.Content = ""
 	}
 	bytes, err = os.ReadFile(refPath)
@@ -48,7 +47,7 @@ func readSection(folderpath string) SectionRead {
 		parsed := string(bytes)
 		readResult.References = parsed
 	} else {
-		fmt.Println("Error reading " + refPath)
+		log.Println("Error reading " + refPath)
 	}
 	return readResult
 }

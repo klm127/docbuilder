@@ -1,7 +1,99 @@
-2022/10/23 16:30:03 Logpath directory ./out doesn't exist.
-2022/10/23 16:30:03 Creating that directory.
-2022/10/23 16:31:09 ~ New Docbuilder session. ~
-2022/10/23 16:34:25 ~ New Docbuilder session. ~
-2022/10/23 16:34:25 Log value was  0xc0000883b0
-2022/10/23 16:36:15 ~ New Docbuilder session. ~
-2022/10/23 16:36:15 Log value was 5
+2022/10/23 20:54:43 ~ New Docbuilder session. ~
+2022/10/23 20:54:43 Logpath directory ./out doesn't exist.
+2022/10/23 20:54:43 Creating that directory.
+2022/10/23 20:54:43 Set inpath to testdata from user flag.
+2022/10/23 20:54:58 ~ New Docbuilder session. ~
+2022/10/23 20:54:58 Set inpath to testdata from user flag.
+2022/10/23 20:55:22 ~ New Docbuilder session. ~
+2022/10/23 20:55:22 Set inpath to testdata from user flag.
+2022/10/23 20:56:00 ~ New Docbuilder session. ~
+2022/10/23 20:56:00 Set inpath to testdata from user flag.
+2022/10/23 20:56:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:56:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:56:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:56:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 20:57:00 ~ New Docbuilder session. ~
+2022/10/23 20:57:00 Set inpath to testdata from user flag.
+2022/10/23 20:57:00 Set CreateMissingFiles to true.
+2022/10/23 20:57:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:57:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:57:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:57:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 20:58:00 ~ New Docbuilder session. ~
+2022/10/23 20:58:00 Set inpath to testdata from user flag.
+2022/10/23 20:58:00 Set CreateMissingFiles to true.
+2022/10/23 20:58:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:58:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:58:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:58:00 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 20:58:55 ~ New Docbuilder session. ~
+2022/10/23 20:58:55 Set inpath to testdata from user flag.
+2022/10/23 20:58:55 Set CreateMissingFiles to true.
+2022/10/23 20:58:55 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:58:55 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:58:55 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:58:55 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 20:59:12 ~ New Docbuilder session. ~
+2022/10/23 20:59:12 Set inpath to testdata from user flag.
+2022/10/23 20:59:12 Set CreateMissingFiles to true.
+2022/10/23 20:59:12 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:59:12 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:59:12 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:59:12 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 20:59:17 ~ New Docbuilder session. ~
+2022/10/23 20:59:17 Set inpath to testdata from user flag.
+2022/10/23 20:59:17 Set CreateMissingFiles to true.
+2022/10/23 20:59:17 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:59:17 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:59:17 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:59:17 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 20:59:31 ~ New Docbuilder session. ~
+2022/10/23 20:59:31 Set inpath to testdata from user flag.
+2022/10/23 20:59:31 Set CreateMissingFiles to true.
+2022/10/23 20:59:31 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 20:59:31 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 20:59:31 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 20:59:31 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 21:00:13 ~ New Docbuilder session. ~
+2022/10/23 21:00:13 Set inpath to testdata from user flag.
+2022/10/23 21:00:13 Set CreateMissingFiles to true.
+2022/10/23 21:00:13 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 21:00:13 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 21:00:13 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 21:00:13 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 21:00:34 ~ New Docbuilder session. ~
+2022/10/23 21:00:34 Set inpath to testdata from user flag.
+2022/10/23 21:00:34 Set CreateMissingFiles to true.
+2022/10/23 21:00:34 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 21:00:34 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 21:00:34 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 21:00:34 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 21:00:42 ~ New Docbuilder session. ~
+2022/10/23 21:00:42 Set inpath to testdata from user flag.
+2022/10/23 21:00:42 Set CreateMissingFiles to true.
+2022/10/23 21:00:42 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 21:00:42 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 21:00:42 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 21:00:42 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 21:00:53 ~ New Docbuilder session. ~
+2022/10/23 21:00:53 Set inpath to testdata from user flag.
+2022/10/23 21:00:53 Set CreateMissingFiles to true.
+2022/10/23 21:00:53 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.md
+2022/10/23 21:00:53 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/1/r1.txt
+2022/10/23 21:00:53 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.md
+2022/10/23 21:00:53 Error reading C:\Users\karlm\go\src\github.com\klm127\docbuilder/testdata/_testdata/r1.txt
+2022/10/23 21:02:48 ~ New Docbuilder session. ~
+2022/10/23 21:02:48 Set inpath to testdata from user flag.
+2022/10/23 21:02:48 Set CreateMissingFiles to true.
+2022/10/23 21:03:33 ~ New Docbuilder session. ~
+2022/10/23 21:03:33 Set inpath to testdata from user flag.
+2022/10/23 21:03:33 Set CreateMissingFiles to true.
+2022/10/23 21:03:40 ~ New Docbuilder session. ~
+2022/10/23 21:03:40 Set inpath to testdata from user flag.
+2022/10/23 21:03:40 Set CreateMissingFiles to true.
+2022/10/23 21:07:05 ~ New Docbuilder session. ~
+2022/10/23 21:07:05 Set inpath to testdata from user flag.
+2022/10/23 21:07:05 Set CreateMissingFiles to true.
+2022/10/23 21:07:15 ~ New Docbuilder session. ~
+2022/10/23 21:07:15 Set inpath to testdata from user flag.
+2022/10/23 21:07:15 Set CreateMissingFiles to true.

@@ -10,16 +10,17 @@ import (
 
 // Config holds configuration options for docbuilder.
 type Config struct {
-	LogPath           string
-	useDefaults       bool
-	Outpath           string
-	Outname           string
-	Inpath            string
-	FolderNames       []string
-	ContentFileName   string
-	ReferenceFileName string
-	TermSections      []string
-	OutputType        string
+	LogPath            string
+	useDefaults        bool
+	Outpath            string
+	Outname            string
+	Inpath             string
+	FolderNames        []string
+	ContentFileName    string
+	ReferenceFileName  string
+	CreateMissingFiles bool
+	TermSections       []string
+	OutputType         string
 }
 
 // NewConfig returns a new Config object.
@@ -73,6 +74,7 @@ func (c *Config) Validate() {
 		c.Inpath = "."
 		l("Defaulting to '.', current directory.")
 	}
+
 	inputPath := path.Join(pwd, c.Inpath)
 	var validatedInputFolders []string
 	for _, s := range c.FolderNames {
